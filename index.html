@@ -90,8 +90,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(–nav-h);padding
 .btn-next{background:var(–gold);color:var(–blk);padding:15px 48px;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;cursor:pointer;border:none;font-family:‘DM Sans’,sans-serif;transition:all .3s;display:inline-flex;align-items:center;gap:10px}
 .btn-next:hover{background:var(–gold2);transform:translateY(-2px);box-shadow:0 12px 40px rgba(201,168,76,.3)}
 .btn-next:disabled{opacity:.4;cursor:not-allowed;transform:none;box-shadow:none}
-.btn-back{background:transparent;color:var(–chrome);padding:15px 28px;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;cursor:pointer;border:1px solid var(–border);font-family:‘DM Sans’,sans-serif;transition:all .3s}
-.btn-back:hover{border-color:var(–chrome);color:var(–white)}
+.btn-back{background:transparent;color:#B8B4AC;padding:15px 28px;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;cursor:pointer;border:1px solid rgba(201,168,76,0.25);font-family:‘DM Sans’,sans-serif;transition:all .3s}
+.btn-back:hover{border-color:#B8B4AC;color:#F0EDE8}
 
 /* RESULT */
 .result-card{background:var(–blk2);border:1px solid var(–border);padding:52px 48px;text-align:center;position:relative;overflow:hidden}
@@ -212,11 +212,11 @@ nav{padding:0 5%}
         <div class="option-title">Nail Salon</div>
         <div class="option-desc">Manicures, pedicures, nail art</div>
       </div>
-      <div class="option-card" onclick="select(this,'biz','Med Spa')">
+      <div class="option-card" onclick="select(this,'biz','Tattoo Shop')">
         <span class="option-check">✓</span>
-        <span class="option-icon">✨</span>
-        <div class="option-title">Med Spa</div>
-        <div class="option-desc">Aesthetic treatments, injectables</div>
+        <span class="option-icon">🎨</span>
+        <div class="option-title">Tattoo Shop</div>
+        <div class="option-desc">Tattoos, piercings, body art</div>
       </div>
       <div class="option-card" onclick="select(this,'biz','Auto Detailing')">
         <span class="option-check">✓</span>
@@ -589,7 +589,7 @@ Write a compelling 3-4 sentence personalized proposal in second person ("you"/"y
     const fallbacks = {
       'Barbershop': `Based on your barbershop's current setup, we'll build you a premium website with an AI-powered booking system that lets clients pick their barber, select their service, and lock in their time in under 60 seconds. Your AI will answer every missed call, send automatic reminders, and follow up with clients who haven't been in a while. Most of our barbershop clients see a 40% increase in bookings within the first 90 days. Let's map out your full system on a free strategy call.`,
       'Nail Salon': `For your nail salon, we'll create a stunning website that converts visitors into booked appointments automatically. Your new system will handle all scheduling, send reminder texts, and run win-back campaigns for clients who haven't visited recently. Our nail salon clients typically recover 20-30% of lost clients through automated follow-ups alone. Book a free strategy call and let's build your growth system.`,
-      'Med Spa': `Your med spa deserves a digital presence that matches the premium experience you deliver. We'll build a high-converting website, set up an AI system that handles inquiries and books consultations automatically, and run targeted ads to bring in new clients consistently. Med spas on our system average a 3x return on their monthly investment within 60 days. Let's talk about your specific goals on a free call.`,
+      'Tattoo Shop': `Your tattoo shop deserves a website that shows off your artists' work and books consultations automatically — no more DMs back and forth. We'll build you a premium portfolio site with deposit collection built into the booking flow, an AI that answers every inquiry instantly, and automated follow-ups that turn one-time clients into regulars. Book your free strategy call and let's build something as sharp as your work.`,
     };
     const fallback = fallbacks[answers.biz] || `Based on everything you've shared, the ${pkg.name} is the perfect fit for your ${answers.biz.toLowerCase()}. We'll build a complete digital system — custom website, smart booking, and AI automation — designed specifically around how your business works. Our clients in your space typically see more booked appointments and fewer no-shows within the first 30 days. Book your free strategy call and let's map out the full plan together.`;
 
